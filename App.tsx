@@ -1,6 +1,7 @@
 
 import React, { useState, useMemo } from 'react';
 import { Calculator, Scale, ShieldCheck, AlertCircle, FileText, Download, CheckCircle2, ChevronRight, Info, RotateCcw, ExternalLink } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 import { CalculatorState, Category } from './types';
 import { SCORING_RULES, DIRECT_QUALIFICATIONS } from './constants';
 
@@ -292,6 +293,7 @@ const App: React.FC = () => {
           </p>
         </div>
       </div>
+      <Analytics />
     </div>
   );
 };
